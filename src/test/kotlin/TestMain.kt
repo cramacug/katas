@@ -15,4 +15,16 @@ internal class TestMain {
         assertEquals("A chessboard must have 64 cells", 64, numberOfCells)
     }
 
+    @Test
+    fun `a chess must have 8 rows of 8 cells`() {
+
+        // Given
+        val chessBoard = ChessBoard()
+
+        // When
+        val numberOfRows: Int = chessBoard.countRows()
+
+        // Then
+        assertEquals("A chessboard must have 8 rows", 8, numberOfRows)
+    }
 }
